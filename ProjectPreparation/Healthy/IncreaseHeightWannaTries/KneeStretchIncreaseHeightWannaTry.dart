@@ -1,16 +1,16 @@
 // ignore_for_file: prefer_const_constructors, unused_field, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:project/WorkoutScreen.dart';
 import 'dart:math';
 
-import 'Contact.dart';
+import '../../Contact.dart';
 
 class KneeStretchIncreaseHeightWannaTry extends StatefulWidget {
   const KneeStretchIncreaseHeightWannaTry({Key? key}) : super(key: key);
 
   @override
-  State<KneeStretchIncreaseHeightWannaTry> createState() =>
-      _KneeStretchIncreaseHeightWannaTry();
+  State<KneeStretchIncreaseHeightWannaTry> createState() => _KneeStretchIncreaseHeightWannaTry();
 }
 
 class _KneeStretchIncreaseHeightWannaTry extends State<KneeStretchIncreaseHeightWannaTry>
@@ -51,10 +51,10 @@ class _KneeStretchIncreaseHeightWannaTry extends State<KneeStretchIncreaseHeight
                   Visibility(
                     visible: _isVisible,
                     child: Container(
-                        height: 230,
-                        width: 350,
+                        height: 290,
+                        width: 345,
                         alignment: Alignment.bottomLeft,
-                        padding: EdgeInsets.all(40),
+                        padding: EdgeInsets.fromLTRB(10, 0, 0, 10),
                         color: Colors.orange,
                         child: ListView(
                           children: [
@@ -117,7 +117,7 @@ Step-6: Repeat 2 times on each side.""",
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Contact()));
+                                  builder: (context) => CardDesignPractice()));
                         },
                         icon: Icon(
                           Icons.home,
