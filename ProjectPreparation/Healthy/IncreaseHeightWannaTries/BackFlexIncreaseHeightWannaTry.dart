@@ -1,16 +1,16 @@
 // ignore_for_file: prefer_const_constructors, unused_field, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:project/WorkoutScreen.dart';
 import 'dart:math';
 
-import 'Contact.dart';
+import '../../Contact.dart';
 
 class BackFlexIncreaseHeightWannaTry extends StatefulWidget {
   const BackFlexIncreaseHeightWannaTry({Key? key}) : super(key: key);
 
   @override
-  State<BackFlexIncreaseHeightWannaTry> createState() =>
-      _BackFlexIncreaseHeightWannaTry();
+  State<BackFlexIncreaseHeightWannaTry> createState() => _BackFlexIncreaseHeightWannaTry();
 }
 
 class _BackFlexIncreaseHeightWannaTry extends State<BackFlexIncreaseHeightWannaTry>
@@ -51,10 +51,10 @@ class _BackFlexIncreaseHeightWannaTry extends State<BackFlexIncreaseHeightWannaT
                   Visibility(
                     visible: _isVisible,
                     child: Container(
-                        height: 230,
-                        width: 350,
+                        height: 290,
+                        width: 345,
                         alignment: Alignment.bottomLeft,
-                        padding: EdgeInsets.all(40),
+                        padding: EdgeInsets.fromLTRB(10, 0, 0, 10),
                         color: Colors.orange,
                         child: ListView(
                           children: [
@@ -113,7 +113,7 @@ Step-4: Complete 3 sets.""",
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Contact()));
+                                  builder: (context) => CardDesignPractice()));
                         },
                         icon: Icon(
                           Icons.home,
